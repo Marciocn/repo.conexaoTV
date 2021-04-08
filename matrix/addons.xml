@@ -94,4 +94,336 @@
 
 	</extension>
 </addon>
+
+<addon id="script.module.certifi"
+       name="certifi"
+       version="2019.11.28+matrix.1"
+       provider-name="Kenneth Reitz">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python package for providing Mozilla's CA Bundle.</summary>
+    <description lang="en_GB">Certifi is a carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. It has been extracted from the Requests project.</description>
+    <license>MPL-2.0</license>
+    <website>https://certifi.io</website>
+    <source>https://github.com/certifi/python-certifi</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.chardet"
+       name="chardet"
+       version="3.0.4+matrix.3"
+       provider-name="Dan Blanchard">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Universal encoding detector</summary>
+    <description lang="en_GB">Packed for Kodi from https://github.com/chardet/chardet</description>
+    <license>LGPL</license>
+    <platform>all</platform>
+    <website>https://chardet.readthedocs.io/en/latest/</website>
+    <source>https://github.com/Freso/script.module.chardet</source>
+    <email>beenje AT gmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.idna"
+       name="idna"
+       version="2.8.1+matrix.1"
+       provider-name="Kim Davies">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Internationalized Domain Names for Python</summary>
+    <description lang="en_GB">Packed for KODI from https://github.com/kjd/idna</description>
+    <platform>all</platform>
+    <language></language>
+    <license>BSD</license>
+    <forum></forum>
+    <website>https://github.com/kjd/idna</website>
+    <source>https://github.com/Freso/script.module.idna</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.5.2+matrix.1" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+  <requires>
+    <!--py3 compliant-->
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pysocks" version="1.6.8" optional="true"/>
+  </requires>
+  <!-- This is needed to get an add-on icon -->
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Kodi InputStream and DRM playback made easy</summary>
+    <summary lang="de_DE">Kodi InputStream und DRM Wiedergabe einfach gemacht</summary>
+    <summary lang="el_GR">Βοηθός Inputstream για το Kodi και εύκολη αναπαραγωγή DRM</summary>
+    <summary lang="fr_FR">La lecture Kodi InputStream et DRM en toute simplicité</summary>
+    <summary lang="es_ES">Kodi InputStream y reproducción DRM echa fácil</summary>
+    <description lang="en_GB">A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback.</description>
+    <description lang="de_DE">Dieses einfache Kodi-Modul macht das Leben für Addon Entwickler einfacher, die auf InputStream basierte Addons und DRM Wiedergabe angewiesen sind.</description>
+    <description lang="el_GR">Μία απλή μονάδα για το Kodi η οποία διευκολύνει την ζωή των προγραμματιστών οι οποίοι εξαρτώνται από τα πρόσθετσ InputStream και αναπαραγωγή τύπου DRM.</description>
+    <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
+    <description lang="fr_FR">Un simple module Kodi qui simplifie la vie des développeurs de modules complémentaires en s’appuyant sur des modules complémentaires basés sur InputStream et sur la lecture de DRM.</description>
+    <description lang="es_ES">Un módulo Kodi simple que hace la vida más fácil para los desarrolladores de complementos que dependen de complementos basados en InputStream y reproducción de DRM.</description>
+    <news>
+v0.5.2 (2020-12-13)
+- Update Chrome OS ARM hardware id's
+
+v0.5.1 (2020-10-02)
+- Fix incorrect ARM HWIDs: PHASER and PHASER360
+- Added Hebrew translations
+- Updated Dutch, Japanese and Korean translations
+
+v0.5.0 (2020-06-25)
+- Extract Widevine CDM directly from Chrome OS, minimizing disk space usage and eliminating the need for root access
+- Improve progress dialog while extracting Widevine CDM on ARM devices
+- Support resuming interrupted downloads on unreliable internet connections
+- Reshape InputStream Helper information dialog
+- Updated Dutch, English, French, German, Greek, Hungarian, Romanian, Russian, Spanish and Swedish translations
+    </news>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://github.com/emilsvennesson/script.module.inputstreamhelper/wiki</website>
+    <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.kodi-six"
+       name="Kodi Six"
+       version="0.1.3.1"
+       provider-name="Roman V.M.">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Wrappers around Kodi Python API for seamless Python 2/3 compatibility</summary>
+    <description lang="en_GB">Wrappers around Kodi Python API that normalize handling of textual and byte strings in Python 2 and 3.</description>
+    <platform>all</platform>
+    <license>GPL v.3</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=327883</forum>
+    <source>https://github.com/romanvm/kodi.six</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>0.1.3:
+- Fix non-UTF-8 byte string decoding in Python 2.</news>
+  </extension>
+</addon>
+
+<addon id="script.module.requests"
+       name="requests"
+       version="2.22.0+matrix.1"
+       provider-name="kennethreitz">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.certifi" version="2019.11.28+matrix.1"/>
+    <import addon="script.module.chardet" version="3.0.4+matrix.1"/>
+    <import addon="script.module.idna" version="2.8.1+matrix.1"/>
+    <import addon="script.module.urllib3" version="1.25.8+matrix.1"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python HTTP for Humans</summary>
+    <description lang="en_GB">Packed for KODI from https://pypi.org/project/requests/</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://python-requests.org</website>
+    <source>https://github.com/Freso/script.module.requests</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.simplejson"
+       name="simplejson"
+       version="3.17.0+matrix.2"
+       provider-name="Bob Ippolito">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en_GB">Simple, fast, extensible JSON encoder/decoder for Python</summary>
+    <description lang="en_GB">Simple, fast, extensible JSON encoder/decoder for Python</description>
+    <disclaimer lang="en_GB">Code taken from https://pypi.org/project/simplejson/</disclaimer>
+    <license>MIT License, Academic Free License v. 2.1</license>
+    <website>https://pypi.org/project/simplejson/</website>
+    <source>https://github.com/simplejson/simplejson</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.six"
+       name="six"
+       version="1.14.0+matrix.2"
+       provider-name="gutworth">
+  <requires>
+    <import addon="xbmc.python"	version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python 2 and 3 compatibility utilities.</summary>
+    <description lang="en_GB">Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.org/project/six/</source>
+    <website>https://pypi.org/project/six/</website>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.urllib3"
+       name="urllib3"
+       version="1.25.8+matrix.1"
+       provider-name="Andrey Petrov">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">HTTP library with thread-safe connection pooling, file post, and more.</summary>
+    <description lang="en_GB">Packed for KODI from https://pypi.org/project/urllib3/</description>
+    <license>MIT</license>
+    <website>https://urllib3.readthedocs.io/en/latest/</website>
+    <source>https://github.com/urllib3/urllib3</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon
+		id="vkkodi.repo" name="[B][COLOR yellow]  Vikings  [COLOR orange]Repositorio Vikings Oficial, SEM BANIMENTO, agora compativel com Kodi Matrix!![/B][/COLOR]"
+		version="3.05"
+		provider-name="[B][COLOR gold]Vikings TEAM[/B][/COLOR]">
+
+		<requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+		</requires>
+
+		<extension point="xbmc.addon.repository" name=".Vikings Repositorio">
+
+
+	<dir>
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+	<dir minversion="16.0.0" maxversion="16.9.9">
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/jarvis/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/jarvis/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/jarvis</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+
+	<dir minversion="17.0.0" maxversion="18.9.0">
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+   <dir minversion="18.9.1">
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+	</extension>
+
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="pt_br"></summary>
+        <description lang="pt_br"></description>
+		<platform>all</platform>
+		<source>http://raw.github.com/vikingskoditeam/vikingskoditeam.github.io/master</source>
+		 <assets>
+            <icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+
+	<news>
+	[COLOR orange]LOG DE CORREÇÔES[/COLOR]
+
+	[COLOR green]*[/COLOR] V 2.00 - compatibilidade com Kodi 19 Matrix
+	[COLOR blue]*[/COLOR] V 1.53 - ajustes de dependencias...
+	[COLOR red]*[/COLOR] V 1.53 - ajustes de dependencias...
+	[COLOR orange]*[/COLOR] V 1.15.1 - Excluido a instalação do plugin Youtube que provocava erros em algumas box...
+	[COLOR gold]*[/COLOR]   V 1.17.1 - Corrigido dependências que provocava erros quando instalado o repositório em Kodi Padrão.
+	</news>
+
+	<summary>Repositório Vikings levando os melhores addons a sua familia e aos quatro cantos do Mundo!!!</summary>
+
+	<description>
+                    [B][COLOR orange]Repositório Vikings, SEM BANIMENTO! SEM SCRIPT MALICIOSO!! PURO, LIMPO E SIMPLES!!![/COLOR][/B]
+					[B][COLOR red]Repositório oficial Vikings Build - Proibido reprodução total ou parcial sem prévia autorização[/COLOR][/B]
+					[B][COLOR white]Addons deste repositório é de uso gratuito!![/COLOR][/B]
+					[B][COLOR firebrick]Proibido a venda dos add-ons contidos neste repositório[/COLOR][/B]
+	</description>
+
+<disclaimer>[B][COLOR orange]Repositório Vikings é apenas um AGREGADOR de ADDONS e, assim como o Google.com, apenas agrega e organiza ADDONS DE TERCEIROS. Não somos responsáveis pelos arquivos aqui encontrados.[/COLOR][/B]</disclaimer>
+
+	</extension>
+</addon>
+
+<addon id="xbmc.python" version="3.0.0" provider-name="Team Kodi">
+  <backwards-compatibility abi="3.0.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="script" schema="script.xsd"/>
+  <extension-point id="subtitles" schema="script.xsd"/>
+  <extension-point id="lyrics" schema="script.xsd"/>
+  <extension-point id="weather" schema="script.xsd"/>
+  <extension-point id="library" schema="script.xsd"/>
+  <extension-point id="screensaver" schema="script.xsd"/>
+  <extension-point id="plugin" schema="pluginsource.xsd"/>
+  <extension-point id="context.item" schema="contextitem.xsd"/>
+</addon>
 </addons>
