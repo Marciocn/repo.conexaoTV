@@ -1,0 +1,51 @@
+<settings>
+<category label="Complementos">
+	    <setting label="[COLOR dimgrey]Configurações de Complemento:[/COLOR]" type="lsep"/>
+	    <setting label="[COLOR dimgrey]Verificar Complementos[/COLOR]" id="check_addon" type="bool" default="true" />
+        <setting label="[COLOR beige]Baixar e Instalar [COLOR lime][B]Elementum[/B][/COLOR]" id="elementum" type="bool" default="true" />
+	    <setting label="[COLOR beige]Baixar e Instalar [COLOR red][B]Youtube[/B][/COLOR]" id="youtube" type="bool" default="false" />
+</category>
+<category label="VIP">	
+		<setting label="[COLOR aquamarine][B]Configurações de Acesso[/B][/COLOR] [COLOR aqua][B](Vip)[/B][/COLOR]" type="lsep"/>	
+	    <setting label="Usuário" id="username" type="text" default="" enable="!eq(-1,false)"/>
+	    <setting label="Senha" id="password" type="text" default="" enable="!eq(-2,false)" option="hidden"/>
+	    <setting label="Saida de Transmissão VIP" id="saida" type="enum" values="M3U8|TS" default="0" />
+	    <setting label="Exibir Menu VIP" id="exibirvip" type="bool" default="false" />
+</category>
+<category label="Proxy">
+		<setting label="[COLOR lightblue][B]Opções do Proxy:[/B][/COLOR]" type="lsep"/>
+		<setting label="[COLOR yellow][B]Ativar Proxy[/B][/COLOR]" id="proxy" type="bool"  default="false" />
+		<setting label="[COLOR yellow][B]Número de Tentativas[/B][/COLOR]" id="proxy_try" type="enum" values="1 Vez|2 Vezes|3 Vezes|4 Vezes|5 Vezes|6 Vezes|6 Vezes|7 Vezes|8 Vezes|9 Vezes|10 Vezes" default="4" />
+		<setting label="[COLOR aqua][B]Utilize apenas se a operadora estiver bloqueando o servidor[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR aqua][B]Conexão Play.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR aqua][B]Aviso: Pode demorar a carregar[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR aqua][B]Não se aplica a servidores de IPTV como o VIP esses tem[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR aqua][B]conexão direta.[/B][/COLOR]" type="bool"/>
+		<setting label="[COLOR aqua][B]Utilize VPN se a operadora bloqueia o IPTV.[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Canais">
+		<setting label="[COLOR aquamarine]Configurações dos Canais:[/COLOR]" type="lsep"/>
+		<setting label="Exibir Canais 4K (Lista M3U)" id="uhdtv" type="bool" default="true" />
+		<setting label="Exibir Canais FHD (Lista M3U)" id="fhdtv" type="bool" default="true" />
+		<setting label="Exibir Canais HD (Lista M3U)" id="hdtv" type="bool" default="true" />
+		<setting label="Exibir Canais SD (Lista M3U)" id="sdtv" type="bool" default="true" />
+		<setting label="(Lista M3U) Exibir Apenas Canais de" id="filtrar" type="enum" values="Desativado|Futebol|Esportes|Filmes e Series|Infantil|Documentario|Aberto|Reality show|Noticias|24 Horas|PPV|" default="0" />
+</category>
+<category label="Controle dos Pais">
+		<setting label="[COLOR lightblue]Controle dos Pais:[/COLOR]" type="lsep"/>
+		<setting label="Exibir Menu Adultos" id="adult" type="bool" default="false" />
+		<setting label="Exibir Canais Adultos (Lista M3U)" id="adult2" type="bool" default="false" />
+		<setting label="Tipo de Teclado (OK para trocar)" id="keyboard" type="enum" values="Númerico|Alfanúmerico" default="0" />
+		<setting label="Entre aqui para alterar senha" type="action" action="RunScript(plugin.video.testando2.matrix, SetPassword)"/>
+		<setting label="[COLOR yellow][B]Senha padrão 0069[/B][/COLOR]" type="bool"/>
+</category>
+<category label="Outros">
+	<setting label="[COLOR aquamarine]Configurações Gerais:[/COLOR]" type="lsep"/>
+    <setting label="Exibir Mensagem de Boas Vindas" id="mensagem1" type="bool" default="true" />	
+    <setting label="Exibir Mensagem de Status" id="mensagem2" type="bool" default="true" />		
+	<setting label="Exibir Favoritos" id="favoritos" type="bool" default="false" />
+    <setting label="Entre aqui para limpar os favoritos" type="action" action="RunScript(plugin.video.testando2.matrix, limparFavoritos)"/>	
+	<setting label="Executar Youtube" id="ytbmode" type="enum" values="Interno 1|Interno 2|Externo" default="1" />	
+    <setting label="Use Miniaturas como Fanart" id="use_thumb" type="bool" default="false" />
+</category>
+</settings>
