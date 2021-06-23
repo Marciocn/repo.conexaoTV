@@ -80,7 +80,7 @@ vip_descricao = '[COLOR aqua][B]SOLICITE SEU ACESSO VIP, O MENOR PREÇO DE TODOS
 vip_dialogo = '[B][B][COLOR aqua]CONFIGURE SEU ACESSO NA NOSSA ÁREA VIP ,ENTRE EM CONTATO PELO WHATSAPP: [COLOR red][B]55+ (82) 98131-4468[COLOR aqua][B] E SOLICITE SEU ACESSO[/B][/COLOR]'
 ##SERIVODR VIP
 url_server_vip1 = 'http://clientadm.fun:8080'
-url_server_vip2 = 'http://lista.minhadns.me:8080'
+url_server_vip2 = 'http://app.smarters.ovh:8880'
 
 
 ## MULTLINK
