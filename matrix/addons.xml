@@ -32,6 +32,36 @@
 </extension>
 </addon>
 
+<addon id="plugin.video.vtvonline"
+       name="[COLOR white][B]VTV [COLOR pink][B]Online[/B][/COLOR]"
+       version="3.0.3+matrix"
+       provider-name="RicardoJ">
+<requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.simplejson"/>
+	<import addon="script.module.kodi-six" />
+</requires>
+<extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+	 <summary lang="en">Bem-vindo ao VTV Online</summary>
+    <description lang="en">Conteúdo de forma rápida e com qualidade, Agregamos todos os dias o melhor conteúdo da Internet, Filmes , Series, Animes, Tv Online e muito mais em um só lugar  </description>
+    <disclaimer lang="en"></disclaimer>
+	<platform>all</platform>
+	<assets>
+       <icon>icon.png</icon>
+       <fanart>fanart.jpg</fanart>
+<screenshot>resources/screenshots/home.png</screenshot>
+<screenshot>resources/screenshots/movies.png</screenshot>
+<screenshot>resources/screenshots/series.png</screenshot>
+</assets>
+	<news>Novidades
+	</news>
+</extension>
+</addon>
+
 <addon
 		id="repo.conexaoTV"
 		name="[B][COLOR white]Repositorio Cone[B][COLOR violet]x[B][COLOR  white]ão[/COLOR][/B] [B][COLOR violet]Tv[/COLOR][/B]"
