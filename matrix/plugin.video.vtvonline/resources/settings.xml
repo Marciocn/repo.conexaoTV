@@ -1,11 +1,11 @@
 <settings>
 <category label="VIP">
-	<setting label="[COLOR aquamarine][B]Configurações de Acesso[/B][/COLOR] [COLOR aqua][B](Vip)[/B][/COLOR]" type="lsep"/>
-	<setting label="[COLOR white][B]Selecione o Servidor[/B][/COLOR]" id="servid" type="enum" values="[B]Servidor 1[/B]|[B]Servidor 2[/B]" default="0" />
+	<setting label="[COLOR pink][B]Configurações de Acesso[/B][/COLOR] [COLOR magenta][B](Vip)[/B][/COLOR]" type="lsep"/>
+	<setting label="[COLOR white][B]Selecione o Servidor[/B][/COLOR]" id="servid" type="enum" values="[B]Servidor 1[/B]" default="0" />
 	<setting label="[COLOR white][B]Usuário[/B][/COLOR]" id="username" type="text" default="" enable="!eq(-1,false)"/>
 	<setting label="[COLOR white][B]Senha[/B][/COLOR]" id="password" type="text" default="" enable="!eq(-2,false)" option="hidden"/>
 	<setting label="[COLOR white][B]Saida de Transmissão VIP[/B][/COLOR]" id="saida" type="enum" values="TS|M3U8" default="0" />
-	<setting label="[COLOR yellow][B]Exibir Menu VIP[/B][/COLOR]" id="exibirvip" type="bool" default="false" />
+	<setting label="[COLOR yellow][B]Exibir Menu VIP[/B][/COLOR]" id="exibirvip" type="bool" default="true" />
 	<setting label="[COLOR yellow][B]Informações da Conta[/B][/COLOR]" type="lsep"/>
 	<setting label="Servidor" id="server_number" type="text" enable="false" default=""/>
 	<setting label="Status" id="status_vip" type="text" enable="false" default=""/>
