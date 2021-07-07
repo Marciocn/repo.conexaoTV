@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.vtvonline"
        name="[COLOR white][B]VTV [COLOR pink][B]Online[/B][/COLOR]"
-       version="3.0.3+matrix"
+       version="3.0.4+matrix"
        provider-name="RicardoJ">
 <requires>
     <import addon="xbmc.python" version="3.0.0"/>
