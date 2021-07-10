@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.conexao" name="[B][COLOR beige]CONE[B][COLOR aqua][B]X[/B][COLOR  beige][B]ÃO[/COLOR][COLOR aqua][B] PLAY[/COLOR][/B]" version="1.0.5+matrix.1" provider-name="[B][COLOR beige]Team[B][COLOR lime]:[/B] [B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"> 
+<addon id="plugin.video.conexao" name="[B][COLOR beige]CONE[B][COLOR aqua][B]X[/B][COLOR  beige][B]ÃO[/COLOR][COLOR aqua][B] PLAY[/COLOR][/B]" version="1.0.6+matrix.1" provider-name="[B][COLOR beige]Team[B][COLOR lime]:[/B] [B][COLOR beige]Cone[COLOR lime][B]x[/B][COLOR  beige][B]ão[/COLOR][COLOR blue]-[COLOR lime]Multi[COLOR blue]-[COLOR green]Addons[/COLOR][/B]"> 
 <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
