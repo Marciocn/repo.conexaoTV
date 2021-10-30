@@ -31,7 +31,7 @@
 <category label="Complementos">
 	<setting label="[COLOR aqua][B]Configurações de Complemento:[/B][/COLOR]" type="lsep"/>
 	<setting label="[COLOR white][B]Verificar Complementos[/B][/COLOR]" id="check_addon" type="bool" default="false" />
-	<setting label="[COLOR white][B]Baixar e Instalar Elementum[/B][/COLOR]" id="elementum" type="bool" default="v" />
+	<setting label="[COLOR white][B]Baixar e Instalar Elementum[/B][/COLOR]" id="elementum" type="bool" default="false" />
 </category>
 <category label="Outros">
 	<setting label="[COLOR lightblue][B]Configurações Gerais:[/B][/COLOR]" type="lsep"/>
