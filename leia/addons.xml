@@ -133,7 +133,7 @@
 
 <addon id="plugin.video.vtvonlinekodi18"
        name="[COLOR white][B]VTV [COLOR pink][B]Online[/B][/COLOR]"
-       version="1.0.6"
+       version="1.0.7"
        provider-name="RicardoJ">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
